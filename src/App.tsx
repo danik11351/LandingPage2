@@ -2,6 +2,13 @@ import { NavBar } from "./NavBar";
 import "./App.css";
 import { HeroSection, HeroSectionStats } from "./HeroSection";
 import { Flowbite } from "flowbite-react";
+import {
+  GettingStarted1,
+  GettingStartedStats,
+  ManagePorject,
+  Reviews,
+} from "./GettingStarted";
+import { Pricing } from "./Pricing";
 
 function App() {
   return (
@@ -11,6 +18,11 @@ function App() {
           <NavBar />
           <HeroSection />
           <HeroSectionStats />
+          <GettingStarted1 />
+          <GettingStartedStats />
+          <ManagePorject />
+          <Reviews />
+          <Pricing />
         </div>
       </Flowbite>
     </>

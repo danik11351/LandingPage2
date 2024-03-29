@@ -1,6 +1,10 @@
 import { FaArrowRight } from "react-icons/fa";
 import { Button } from "flowbite-react";
 import Img1 from "./assets/HeroSectionImg.svg";
+import Card1 from "./assets/StatsCodeImg.svg";
+import Card2 from "./assets/StatsWatchImg.svg";
+import Card3 from "./assets/StastsPhoneImg.svg";
+
 function HeroSection() {
   return (
     <>
@@ -55,11 +59,87 @@ function HeroSection() {
 function HeroSectionStats() {
   return (
     <div>
+      <div className="mx-5">
+        <img className="ms-auto me-auto " src={Img1} alt="" />
+      </div>
       <div
-        className="delay-[300ms] duration-[600ms] taos:translate-y-[100%] taos:invisible"
-        data-taos-offset="300"
+        id="Stats-Cards"
+        className="flex flex-col lg:flex-row justify-around "
       >
-        <img className="ms-auto me-auto" src={Img1} alt="" />
+        <div
+          id="card1"
+          className="ms-auto me-auto lg:me-0 lg:ms-0 text-center lg:text-left"
+        >
+          <div>
+            <div>
+              <img
+                className="ms-auto me-auto lg:me-0 lg:ms-0"
+                src={Card1}
+                alt=""
+              />
+            </div>
+            <div>
+              <div>
+                <h1 className="my-3 font-bold">Project management</h1>
+              </div>
+              <div>
+                <p>
+                  With lots of unique blocks, you can easily
+                  <br /> build a page without coding. Build your
+                  <br /> next landing page.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="card2"
+          className="ms-auto me-auto lg:me-0 lg:ms-0 text-center lg:text-left mt-5 lg:mt-0"
+        >
+          <div>
+            <img
+              className="ms-auto me-auto lg:me-0 lg:ms-0"
+              src={Card2}
+              alt=""
+            />
+          </div>
+          <div>
+            <div>
+              <h1 className="my-3 font-bold">Time Tracking </h1>
+            </div>
+            <div>
+              <p>
+                With lots of unique blocks, you can easily
+                <br /> build a page without coding. Build your
+                <br /> next landing page.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          id="card3"
+          className="ms-auto me-auto lg:me-0 lg:ms-0 text-center lg:text-left mt-5 lg:mt-0"
+        >
+          <div>
+            <img
+              className="ms-auto me-auto lg:me-0 lg:ms-0"
+              src={Card3}
+              alt=""
+            />
+          </div>
+          <div>
+            <div>
+              <h1 className="my-3 font-bold">Beautiful mobile app</h1>
+            </div>
+            <div>
+              <p>
+                With lots of unique blocks, you can easily
+                <br /> build a page without coding. Build your
+                <br /> next landing page.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
