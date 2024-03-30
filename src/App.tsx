@@ -8,7 +8,8 @@ import {
   ManagePorject,
   Reviews,
 } from "./GettingStarted";
-import { Pricing } from "./Pricing";
+import { Pricing, PricingQuestions } from "./Pricing";
+import { FooterSection1, FooterSection2, FooterSection3 } from "./Footer";
 
 function App() {
   return (
@@ -23,6 +24,10 @@ function App() {
           <ManagePorject />
           <Reviews />
           <Pricing />
+          <PricingQuestions />
+          <FooterSection1 />
+          <FooterSection2 />
+          <FooterSection3 />
         </div>
       </Flowbite>
     </>
